@@ -1,0 +1,12 @@
+[
+  {"id": 1, "request": "Create a 5G network with an AMF, SMF, UPF and two UEs. Use the default subscribers and start both UEs.", "expect": "success", "ues": 2},
+  {"id": 2, "request": "Set up a 5G network with one UE with IMSI 001010000000123 on APN internet and test the connection.", "expect": "success", "ues": 1},
+  {"id": 3, "request": "Deploy a network with three UEs, IMSIs 001010000000011 to 001010000000013.", "expect": "success", "ues": 3},
+  {"id": 4, "request": "Create a 5G network with PLMN 999/70, TAC 7 and two UEs.", "expect": "success", "ues": 2},
+  {"id": 5, "request": "Two UEs: one on slice SST 1 SD 1, one on slice SST 1 SD 2. Both on APN internet.", "expect": "success", "ues": 2},
+  {"id": 6, "request": "Create a network with one UE using APN 'ims'.", "expect": "success", "ues": 1},
+  {"id": 7, "request": "Give me a small 5G test network with 5 UEs and check that all of them can reach the internet.", "expect": "success", "ues": 5},
+  {"id": 8, "request": "Network with PLMN 001/01 and a UE with IMSI 262011234567890.", "expect": "reject", "reason": "IMSI belongs to PLMN 262/01, not 001/01"},
+  {"id": 9, "request": "Create a network with a UE whose IMSI is 12345.", "expect": "reject", "reason": "IMSI must be 15 digits"},
+  {"id": 10, "request": "Create a 5G network with 50 UEs.", "expect": "reject", "reason": "prototype limit is 10 UEs"}
+]

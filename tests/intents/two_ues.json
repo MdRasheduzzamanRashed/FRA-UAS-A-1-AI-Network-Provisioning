@@ -1,0 +1,10 @@
+{
+  "name": "two-ues",
+  "mcc": "001",
+  "mnc": "01",
+  "tac": 1,
+  "ues": [
+    {"imsi": "001010000000001", "apn": "internet"},
+    {"imsi": "001010000000002", "apn": "internet"}
+  ]
+}
