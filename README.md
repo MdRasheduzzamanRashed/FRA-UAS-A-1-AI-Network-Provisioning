@@ -1,3 +1,24 @@
+# FRA-UAS-A-1 – AI Network Provisioning
+
+**Mobile Computing WS 2026/27 · Frankfurt UAS · Group A, Topic 1**
+
+An LLM agent that turns a natural-language request ("Create a 5G network with two UEs …")
+into a running, verified Open5GS + UERANSIM network.
+
+- Task and measurable use case: [task.md](task.md)
+- Architecture: [docs/architecture.md](docs/architecture.md)
+- Implementation and how to run: [docs/implementation.md](docs/implementation.md)
+- Testing and evaluation: [docs/testing.md](docs/testing.md)
+
+```bash
+pip install -r requirements.txt
+python -m unittest discover -s tests -t .                                    # offline tests
+python -m src.provisioning.agent --no-llm --intent tests/intents/two_ues.json  # scripted baseline
+python -m src.provisioning.agent "Create a 5G network with two UEs"          # LLM agent
+```
+
+---
+
 # Mobile Computing Template Wintersemester 2026/27
 
 You can find more information about the project in the [Handbook](Handbook.md) document
