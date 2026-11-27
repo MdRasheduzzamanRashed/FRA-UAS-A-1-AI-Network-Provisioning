@@ -43,9 +43,11 @@ Baseline for comparison: the scripted pipeline (`--no-llm`) with a hand-written 
 - Out of scope (possible extensions): multiple UPFs/SMFs, roaming, PacketRusher multi-gNB, MCP server interface
 
 ## Team
-| Member | Role |
-|--------|------|
-| TBD | Network / infrastructure (images, compose, configs, Wireshark) |
-| TBD | Tool layer (`src/provisioning/tools.py`, `configgen.py`) |
-| TBD | Agent and prompts (`agent.py`, LLM selection, prompt design) |
-| TBD | Tests, evaluation and documentation (`tests/`, `results/`, `docs/`) |
+| Member | Branch | Role |
+|--------|--------|------|
+| Md Rasheduzzaman (lead) | `Md-Rasheduzzaman` | Agent, tools, config generator, integration, reviews all PRs |
+| Zaria Fahamida | `Zaria-Fahamida` | Network & infrastructure: setup guide, scenarios, fault configs, Wireshark |
+| Md Shakaut Kader | `Md-Shakaut-Kader` | MCP server around the tools, tool unit tests, architecture figures |
+| Nowrin Tasnin Sinthia | `Nowrin-Tasnin-Sinthia` | Evaluation: run test requests, measurements, charts, `docs/testing.md` |
+
+Work plan and tasks: [docs/project-plan.md](docs/project-plan.md)
